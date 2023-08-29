@@ -25,4 +25,18 @@ const GameBoard = () => {
   );
 };
 
+let PlayerAction = <Square PlayerStatus="X" />;
+
+const Square = (turn) => {
+  return (
+    <div className="Square">
+      <button id="Square">{turn.PlayerStatus}</button>
+    </div>
+  );
+};
+
+const PlayerStatus = (turn) => {
+  return pass;
+};
+
 export default GameBoard;
