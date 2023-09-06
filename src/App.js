@@ -5,7 +5,6 @@ import GameBoard from "./Components/Gameboard/Gameboard.js";
 import { useState } from "react";
 
 function App() {
-  const [board, Setboard] = useState(["", "", "", "", "", "", "", "", ""]);
   return (
     <div className="App-header">
       <GameBoard />

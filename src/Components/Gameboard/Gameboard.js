@@ -1,42 +1,46 @@
-// link the css
 import "./Gameboard.css";
+import Square from "./Square.js";
 
 const GameBoard = () => {
   return (
     <div className="Board">
       <table>
         <tr id="RowOne">
-          <td id="One"></td>
-          <td id="Two"></td>
-          <td id="Three"></td>
+          <td id="One">
+            <Square />
+          </td>
+          <td id="Two">
+            <Square />
+          </td>
+          <td id="Three">
+            <Square />
+          </td>
         </tr>
         <tr id="RowTwo">
-          <td id="Four"></td>
-          <td id="Five"></td>
-          <td id="Six"></td>
+          <td id="Four">
+            <Square />
+          </td>
+          <td id="Five">
+            <Square />
+          </td>
+          <td id="Six">
+            <Square />
+          </td>
         </tr>
         <tr id="RowThree">
-          <td id="Seven"></td>
-          <td id="Eight"></td>
-          <td id="Nine"></td>
+          <td id="Seven">
+            <Square />
+          </td>
+          <td id="Eight">
+            <Square />
+          </td>
+          <td id="Nine">
+            <Square />
+          </td>
         </tr>
       </table>
     </div>
   );
-};
-
-let PlayerAction = <Square PlayerStatus="X" />;
-
-const Square = (turn) => {
-  return (
-    <div className="Square">
-      <button id="Square">{turn.PlayerStatus}</button>
-    </div>
-  );
-};
-
-const PlayerStatus = (turn) => {
-  return pass;
 };
 
 export default GameBoard;
